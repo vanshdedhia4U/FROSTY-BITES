@@ -1,0 +1,6 @@
+{
+  "name": "Frosty Bites",
+  "description": "Celebration cakes, artisanal fresh cakes, and cake delivery in Ambernath, Maharashtra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
