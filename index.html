@@ -53,6 +53,23 @@
   </head>
   <body class="bg-[#FFF9F2] text-[#3B241C] antialiased selection:bg-[#EBC3A5] selection:text-[#3B241C]">
     <div id="root"></div>
+    <!-- Static host loader (Automatically mounts compiled bundle when served directly by GitHub Pages) -->
+    <script>
+      (function() {
+        if (window.location.hostname.includes('github.io') || window.location.protocol === 'file:') {
+          var l = document.createElement('link');
+          l.rel = 'stylesheet';
+          l.href = './assets/index.css';
+          document.head.appendChild(l);
+
+          var s = document.createElement('script');
+          s.type = 'module';
+          s.crossOrigin = 'anonymous';
+          s.src = './assets/index.js';
+          document.body.appendChild(s);
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
